@@ -37,7 +37,7 @@ export default createAppContainer(
       Auth: AuthStack,
     },
     {
-      initialRouteName: 'Auth',
+      initialRouteName: 'App',
       headerMode: 'none',
       navigationOptions: navigationOptions,
     },

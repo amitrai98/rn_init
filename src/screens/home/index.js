@@ -3,9 +3,9 @@ import {View, Text, StyleSheet} from 'react-native';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {loadHome} from './HomeActions';
-type Props = {};
+import AppHeader from '../../header/AppHeader';
 
-export class home extends Component<Props> {
+export class home extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -13,6 +13,7 @@ export class home extends Component<Props> {
   render() {
     return (
       <View>
+        <AppHeader title={'Home'} />
         <Text>hello from home</Text>
       </View>
     );
